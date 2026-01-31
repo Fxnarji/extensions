@@ -16,11 +16,11 @@ jobs:
       - name: Install Blender
         uses: bradyajohnston/setup-blender@v3
         with:
-          version: "4.5"  # replace with the exact Blender version you want
+          version: "5.0"  # replace with the exact Blender version you want
 
       - name: build index.json
         run: |
-          blender --command extension server-generate --repo-dir=docs/
+          blender --command extension server-generate --repo-dir=./
 
       - name: Commit and push build artifacts
         run: |
