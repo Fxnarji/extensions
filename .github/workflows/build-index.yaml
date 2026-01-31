@@ -20,7 +20,7 @@ jobs:
 
       - name: build index.json
         run: |
-          blender --command extension server-generate --repo-dir=docs/
+          blender --command extension server-generate --repo-dir=/
 
       - name: Commit and push build artifacts
         run: |
