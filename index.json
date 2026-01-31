@@ -1,0 +1,23 @@
+{
+  "version": "v1",
+  "blocklist": [],
+  "data": [
+    {
+      "schema_version": "1.0.0",
+      "id": "tech_art_toolbox",
+      "name": "Tech Artists Toolbox",
+      "tagline": "one click solutions to your everyday nuisances",
+      "version": "1.1.0",
+      "type": "add-on",
+      "maintainer": "fxn-work@proton.me",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.0.1",
+      "permissions": {},
+      "archive_url": "./tech_art_toolbox-1.1.0.zip",
+      "archive_size": 23180,
+      "archive_hash": "sha256:f363b1d95d72e4f3c4fd784cf78f534a6bfe70bb3eee0b8085287ef7aecbc021"
+    }
+  ]
+}
