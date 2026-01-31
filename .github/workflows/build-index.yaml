@@ -2,6 +2,7 @@ name: Build index.json
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -16,7 +17,7 @@ jobs:
       - name: Install Blender
         uses: bradyajohnston/setup-blender@v3
         with:
-          version: "5.0"  # replace with the exact Blender version you want
+          version: "4.4"  # temporarily using 4.4 because 4.5 is down
 
       - name: build index.json
         run: |
@@ -26,6 +27,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add docs/
+          git add index.json 
           git commit -m "Update build and index.json" || echo "No changes to commit"
           git push origin HEAD:main
